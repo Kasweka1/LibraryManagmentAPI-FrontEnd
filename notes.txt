@@ -1,0 +1,9 @@
+The major sections of the library are:
+
+Fiction - This section contains novels, short stories, and other works of imaginative fiction.
+Nonfiction - This section contains books on a wide range of subjects such as history, biography, science, philosophy, and more.
+Reference - This section includes encyclopedias, dictionaries, atlases, and other reference resources for looking up information.
+Children's - This section contains books, picture books, and other materials geared towards younger readers.
+Periodicals - This section houses magazines, newspapers, and other serial publications.
+Media - This section contains audio books, DVDs, CDs, and other multimedia resources.
+Special Collections - Many libraries have specialized collections, such as rare books, local history materials, or archives.

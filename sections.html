@@ -10,7 +10,7 @@
     <meta name="author" content="theme_ocean" />
     <!--! The above 6 meta tags *must* come first in the head; any other head content must come *after* these tags !-->
     <!--! BEGIN: Apps Title-->
-    <title>Toshokan || Dashboard</title>
+    <title>Sections</title>
     <!--! END:  Apps Title-->
     <!--! BEGIN: Favicon-->
     <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico" />
@@ -80,11 +80,11 @@
                                     class="feather-chevron-right"></i></span>
                         </a>
                         <ul class="nxl-submenu">
-                            <li class="nxl-item"><a class="nxl-link" href="sections.html">Sections</a></li>
-                            <li class="nxl-item"><a class="nxl-link" href="sub_section.html">Sub Sections</a></li>
-                            <li class="nxl-item"><a class="nxl-link" href="publishers.html">Publishers</a></li>
-                            <li class="nxl-item"><a class="nxl-link" href="authors.html">Authors</a></li>
-                            <li class="nxl-item"><a class="nxl-link" href="books.html">Books</a></li>
+                            <li class="nxl-item"><a class="nxl-link" href="apps-chat.html">Sections</a></li>
+                            <li class="nxl-item"><a class="nxl-link" href="apps-chat.html">Publishers</a></li>
+                            <li class="nxl-item"><a class="nxl-link" href="apps-email.html">Genres</a></li>
+                            <li class="nxl-item"><a class="nxl-link" href="apps-tasks.html">Authors</a></li>
+                            <li class="nxl-item"><a class="nxl-link" href="apps-notes.html">Books</a></li>
                         </ul>
                     </li>
                     <li class="nxl-item nxl-hasmenu">
@@ -318,12 +318,13 @@
             <!-- [ page-header ] start -->
             <div class="page-header">
                 <div class="page-header-left d-flex align-items-center">
+
                     <div class="page-header-title">
                         <h5 class="m-b-10">Dashboard</h5>
                     </div>
                     <ul class="breadcrumb">
                         <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                        <li class="breadcrumb-item">Dashboard</li>
+                        <li class="breadcrumb-item">Sections</li>
                     </ul>
                 </div>
                 <div class="page-header-right ms-auto">
@@ -352,274 +353,120 @@
             <!-- [ Main Content ] start -->
             <div class="main-content">
                 <div class="row">
-                    <div class="col-xxl-3 col-md-6">
+                    <div class="col-xl-12">
                         <div class="card stretch stretch-full">
                             <div class="card-body">
-                                <div class="d-flex align-items-center justify-content-between">
-                                    <div class="d-flex align-items-center gap-3">
-                                        <div class="avatar-text avatar-xl rounded bg-primary text-white">
-                                            <i class="feather-users"></i>
+                                <form action="">
+                                    <div class="row">
+                                        <div class="col-lg-6 mb-4">
+                                            <label class="form-label">Section Name<span
+                                                    class="text-danger">*</span></label>
+                                            <input type="text" class="form-control" placeholder="First Name">
                                         </div>
-                                        <a href="javascript:void(0);" class="fw-bold d-block">
-                                            <span class="text-truncate-1-line">Total Admins</span>
-                                            <span class="fs-24 fw-bolder d-block">26,595</span>
-                                        </a>
+                                        <div class="col-lg-6 mb-4">
+                                            <label class="form-label">Desctiption<span
+                                                    class="text-danger">*</span></label>
+                                            <input type="text" class="form-control" placeholder="last Name">
+                                        </div>
                                     </div>
-                                    <div class="badge bg-soft-success text-success">
-                                        <span>36.85%</span>
-                                    </div>
-                                </div>
+                                   
+                                    <input type="submit" class="btn btn-md btn-primary successAlertMessage "  >
+                                    <!-- <button id="add_row" class="btn btn-md btn-primary">Add User</button> -->
+                                </form>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xxl-3 col-md-6">
+                    <div class="col-lg-12">
                         <div class="card stretch stretch-full">
-                            <div class="card-body">
-                                <div class="d-flex align-items-center justify-content-between">
-                                    <div class="d-flex align-items-center gap-3">
-                                        <div class="avatar-text avatar-xl rounded bg-success text-white">
-                                            <i class="feather-users"></i>
+                            <div class="card-header d-flex justify-content-between align-items-center">
+                                <h5 class="card-title">Library Sections</h5>
+                                <div class="d-flex align-items-center">
+                                   
+                                    <div class="card-header-action me-3" >
+                                        <div class="card-header-btn">
+                                            <div data-bs-toggle="tooltip" title="Refresh">
+                                                <a href="javascript:void(0);" class="avatar-text avatar-xs bg-warning"
+                                                    data-bs-toggle="refresh"> </a>
+                                            </div>
+                                            <div data-bs-toggle="tooltip" title="Maximize/Minimize">
+                                                <a href="javascript:void(0);" class="avatar-text avatar-xs bg-success"
+                                                    data-bs-toggle="expand"> </a>
+                                            </div>
                                         </div>
-                                        <a href="javascript:void(0);" class="fw-bold d-block">
-                                            <span class="text-truncate-1-line">Total Staff</span>
-                                            <span class="fs-24 fw-bolder d-block">2,245</span>
-                                        </a>
                                     </div>
-                                    <div class="badge bg-soft-primary text-success">
-
-                                        <span>24.56%</span>
-                                    </div>
+                                    <!-- <a href="javascript:void(0);" class="btn btn-primary ">
+                                        <i class="feather-save me-2"></i>
+                                        <span>Add Section</span>
+                                    </a> -->
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-xxl-3 col-md-6">
-                        <div class="card stretch stretch-full">
-                            <div class="card-body">
-                                <div class="d-flex align-items-center justify-content-between">
-                                    <div class="d-flex align-items-center gap-3">
-                                        <div class="avatar-text avatar-xl rounded bg-teal text-white">
-                                            <i class="feather-users"></i>
-                                        </div>
-                                        <a href="javascript:void(0);" class="fw-bold d-block">
-                                            <span class="text-truncate-1-line">Total Students</span>
-                                            <span class="fs-24 fw-bolder d-block">1,254</span>
-                                        </a>
-                                    </div>
-                                    <div class="badge bg-soft-success text-success">
-
-                                        <span>33.29%</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xxl-3 col-md-6">
-                        <div class="card stretch stretch-full">
-                            <div class="card-body">
-                                <div class="d-flex align-items-center justify-content-between">
-                                    <div class="d-flex align-items-center gap-3">
-                                        <div class="avatar-text avatar-xl rounded bg-primary text-white">
-                                            <i class="feather-users"></i>
-                                        </div>
-                                        <a href="javascript:void(0);" class="fw-bold d-block">
-                                            <span class="text-truncate-1-line">Total Vistors</span>
-                                            <span class="fs-24 fw-bolder d-block">4,586</span>
-                                        </a>
-                                    </div>
-                                    <div class="badge bg-soft-primary text-success">
-
-                                        <span>42.47%</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xxl-6 col-lg-6">
-                        <div class="card stretch stretch-full">
-                            <div class="card-header">
-                                <h5 class="card-title">Books in Circulation</h5>
-                                <div class="card-header-action">
-
-
-                                </div>
-                            </div>
-                            <div class="card-body">
-                                <div id="click-by-country-donut"
-                                    class="d-flex align-items-center justify-content-center"></div>
-                                <hr class="border-dashed mt-1 mb-3">
-                                <div class="hstack justify-content-between">
-                                    <div class="hstack">
-                                        <div class="me-3">
-                                            <i class="feather-book-open"></i>
-                                        </div>
-                                        <a href="javascript:void(0);">
-                                            <span>Borrowed Books</span>
-                                        </a>
-                                    </div>
-                                    <div class="fs-11 fw-medium text-uppercase text-muted">2,258 </div>
-                                </div>
-                                <hr class="border-dashed my-3">
-                                <div class="hstack justify-content-between">
-                                    <div class="hstack">
-                                        <div class="me-3">
-                                            <i class="feather-book"></i>
-                                        </div>
-                                        <a href="javascript:void(0);">
-                                            <span>Returned Books</span>
-                                        </a>
-                                    </div>
-                                    <div class="fs-11 fw-medium text-uppercase text-muted">2,025 </div>
-                                </div>
-                                <hr class="border-dashed my-3">
-                                <div class="hstack justify-content-between">
-                                    <div class="hstack">
-                                        <div class="me-3">
-                                            <i class="feather-file-minus"></i>
-                                        </div>
-                                        <a href="javascript:void(0);">
-                                            <span>Over Due Books</span>
-                                        </a>
-                                    </div>
-                                    <div class="fs-11 fw-medium text-uppercase text-muted">1,836 </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xxl-6 col-lg-6">
-                        <div class="card stretch stretch-full">
-                            <div class="card-header">
-                                <h5 class="card-title">Catalog Overview</h5>
-
-                            </div>
-                         
+                            
                             <div class="card-body custom-card-action p-0">
                                 <div class="table-responsive">
                                     <table class="table table-hover mb-0">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">ID</th>
+                                                <th scope="col" class="w-25">Section Name</th>
+                                                <th scope="col">Description</th>
+                                                <th scope="col" class="text-end">Action</th>
+                                            </tr>
+                                        </thead>
                                         <tbody>
                                             <tr>
                                                 <td>
-                                                    <a href="javascript:void(0);">
-                                                        <i class="fa fa-list fs-16 text-primary me-2"></i>
-                                                        <span>Sections</span>
-                                                    </a>
+                                                    <div class="hstack gap-3">
+                                                        <div>
+                                                            <p class="d-block mb-1">001</p>
+                                                        </div>
+                                                    </div>
                                                 </td>
                                                 <td>
-                                                    <span class="text-end d-flex align-items-center m-0">
-                                                        <span class="me-3">90%</span>
+                                                    <div class="fs-12 fw-medium mb-2">Fiction</div>
 
-                                                    </span>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <a href="javascript:void(0);">
-                                                        <i class="fa fa-tag fs-16 text-primary me-2"></i>
-                                                        <span>Sub Sections</span>
-                                                    </a>
                                                 </td>
                                                 <td>
-                                                    <span class="text-end d-flex align-items-center m-0">
-                                                        <span class="me-3">20%</span>
+                                                    <div class="fs-12 fw-medium mb-2">Books not Real</div>
+                                                </td>
+                                                </td>
+                                                <td>
+                                                    <div class="hstack gap-2 justify-content-end">
+                                                        <a href="javascript:void(0);" class="avatar-text avatar-md">
+                                                            <i class="feather-edit"></i>
+                                                        </a>
+                                                        <a href="javascript:void(0);" class="avatar-text avatar-md">
+                                                            <i class="feather-trash-2"></i>
+                                                        </a>
 
-                                                    </span>
+                                                    </div>
                                                 </td>
                                             </tr>
-                                            <tr>
-                                                <td>
-                                                    <a href="javascript:void(0);">
-                                                        <i class="fa fa-male fs-16 text-primary me-2"></i>
-                                                        <span>Authors</span>
-                                                    </a>
-                                                </td>
-                                                <td>
-                                                    <span class="text-end d-flex align-items-center m-0">
-                                                        <span class="me-3">76%</span>
 
-                                                    </span>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <a href="javascript:void(0);">
-                                                        <i class="fa fa-building fs-16 text-primary me-2"></i>
-                                                        <span>Publishers</span>
-                                                    </a>
-                                                </td>
-                                                <td>
-                                                    <span class="text-end d-flex align-items-center m-0">
-                                                        <span class="me-3">50%</span>
-                                                    </span>
-                                                </td>
-                                            </tr>
-                                            
-                                            <tr>
-                                                <td>
-                                                    <a href="javascript:void(0);">
-                                                        <i class="fa fa-book fs-16 text-primary me-2"></i>
-                                                        <span>Books</span>
-                                                    </a>
-                                                </td>
-                                                <td>
-                                                    <span class="text-end d-flex align-items-center m-0">
-                                                        <span class="me-3">15%</span>
-
-                                                    </span>
-                                                </td>
-                                            </tr>
                                         </tbody>
                                     </table>
                                 </div>
                             </div>
-                            
-
-                        </div>
-                    </div>
-                    <!-- [Mini Card] end -->
-
-                    <div class="col-xxl-12">
-                        <div class="card stretch stretch-full">
-                            <div class="card-header">
-                                <h5 class="card-title">Wallet</h5>
-                            
-                            </div>
-                            <div class="card-body custom-card-action p-0">
-                            </div>
                             <div class="card-footer">
-                                <div class="row g-4">
-                                    <div class="col-lg-4">
-                                        <div class="p-3 border border-dashed rounded">
-                                            <div class="fs-12 text-muted mb-1">Books Value</div>
-                                            <h6 class="fw-bold text-dark">$5,486</h6>
-                                            
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4">
-                                        <div class="p-3 border border-dashed rounded">
-                                            <div class="fs-12 text-muted mb-1">Loan Amount Due</div>
-                                            <h6 class="fw-bold text-dark">$9,275</h6>
-                                            
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4">
-                                        <div class="p-3 border border-dashed rounded">
-                                            <div class="fs-12 text-muted mb-1">Settled Amounts</div>
-                                            <h6 class="fw-bold text-dark">$3,868</h6>
-                                            
-                                        </div>
-                                    </div>
-                                    
-                                </div>
+                                <ul class="list-unstyled d-flex align-items-center gap-2 mb-0 pagination-common-style">
+                                    <li>
+                                        <a href="javascript:void(0);"><i class="bi bi-arrow-left"></i></a>
+                                    </li>
+                                    <li><a href="javascript:void(0);" class="active">1</a></li>
+                                    <li><a href="javascript:void(0);">2</a></li>
+                                    <li>
+                                        <a href="javascript:void(0);"><i class="bi bi-dot"></i></a>
+                                    </li>
+                                    <li><a href="javascript:void(0);">8</a></li>
+                                    <li><a href="javascript:void(0);">9</a></li>
+                                    <li>
+                                        <a href="javascript:void(0);"><i class="bi bi-arrow-right"></i></a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
-                    <!-- [Payment Records] end -->
-                    
-
-
-                    <!--! END: [Team Progress] !-->
                 </div>
+
             </div>
             <!-- [ Main Content ] end -->
         </div>
