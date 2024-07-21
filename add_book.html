@@ -10,7 +10,7 @@
     <meta name="author" content="theme_ocean" />
     <!--! The above 6 meta tags *must* come first in the head; any other head content must come *after* these tags !-->
     <!--! BEGIN: Apps Title-->
-    <title>All Books</title>
+    <title>Add Book</title>
     <!--! END:  Apps Title-->
     <!--! BEGIN: Favicon-->
     <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico" />
@@ -318,13 +318,12 @@
             <!-- [ page-header ] start -->
             <div class="page-header">
                 <div class="page-header-left d-flex align-items-center">
-
                     <div class="page-header-title">
                         <h5 class="m-b-10">Dashboard</h5>
                     </div>
                     <ul class="breadcrumb">
                         <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                        <li class="breadcrumb-item">Books</li>
+                        <li class="breadcrumb-item">Add Book</li>
                     </ul>
                 </div>
                 <div class="page-header-right ms-auto">
@@ -353,110 +352,94 @@
             <!-- [ Main Content ] start -->
             <div class="main-content">
                 <div class="row">
-             
-                    <div class="col-lg-12">
+                    <div class="col-xl-12">
                         <div class="card stretch stretch-full">
-                            <div class="card-header d-flex justify-content-between align-items-center">
-                                <h5 class="card-title">Books</h5>
-                                <div class="d-flex align-items-center">
-                                   
-                                    <div class="card-header-action me-3" >
-                                        <div class="card-header-btn">
-                                            <div data-bs-toggle="tooltip" title="Refresh">
-                                                <a href="javascript:void(0);" class="avatar-text avatar-xs bg-warning"
-                                                    data-bs-toggle="refresh"> </a>
-                                            </div>
-                                            <div data-bs-toggle="tooltip" title="Maximize/Minimize">
-                                                <a href="javascript:void(0);" class="avatar-text avatar-xs bg-success"
-                                                    data-bs-toggle="expand"> </a>
-                                            </div>
+                            <div class="card-body">
+                                <form action="">
+                                    <div class="row">
+                                        <div class="col-lg-6 mb-4">
+                                            <label class="form-label">Book Title<span
+                                                    class="text-danger">*</span></label>
+                                            <input type="text" class="form-control" placeholder="First Name">
+                                        </div>
+                                        <div class="col-lg-6 mb-4">
+                                            <label class="form-label">Author<span class="text-danger">*</span></label>
+                                            <select class="form-select" data-select2-selector="user">
+                                                <option value="#" data-user="1">Peter Griffin</option>
+                                                <option value="#" data-user="2">Homelander Phiri</option>
+                                            </select>
                                         </div>
                                     </div>
-                                    <!-- <a href="javascript:void(0);" class="btn btn-primary ">
-                                        <i class="feather-save me-2"></i>
-                                        <span>Add Section</span>
-                                    </a> -->
-                                </div>
-                            </div>
-                            
-                            <div class="card-body custom-card-action p-0">
-                                <div class="table-responsive">
-                                    <table class="table table-hover mb-0">
-                                        <thead>
-                                            <tr>
-                                                <th scope="col">ID</th>
-                                                <th scope="col" class="w-25">Title</th>
-                                                <th scope="col" class="w-25">Author</th>
-                                                <th scope="col" class="w-25">No of copies</th>
-                                             
-                                                <th scope="col" class="w-25">Sub Section</th>
-                                                <th scope="col" class="w-25">ISBN</th>
-                                                <th scope="col" class="text-end">Action</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>
-                                                    <div class="hstack gap-3">
-                                                        <div>
-                                                            <p class="d-block mb-1">001</p>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div class="fs-12 fw-medium mb-2">The Pringles</div>
-                                                </td>
-                                                <td>
-                                                    <div class="fs-12 fw-medium mb-2">Chimweso Faith</div>
-                                                </td>
-                                                <td>
-                                                    <div class="fs-12 fw-medium mb-2">20</div>
-                                                </td>
-                                               
-                                               
-                                                <td>
-                                                    <div class="fs-12 fw-medium mb-2">Horror</div>
-                                                </td>
-                                                <td>
-                                                    <div class="fs-12 fw-medium mb-2">978-3-16-148410-0</div>
-                                                </td>
-                                                </td>
-                                                <td>
-                                                    <div class="hstack gap-2 justify-content-end">
-                                                        <a href="javascript:void(0);" class="avatar-text avatar-md">
-                                                            <i class="feather-edit"></i>
-                                                        </a>
-                                                        <a href="javascript:void(0);" class="avatar-text avatar-md">
-                                                            <i class="feather-trash-2"></i>
-                                                        </a>
-                                                        <a href="javascript:void(0);" class="avatar-text avatar-md">
-                                                            <i class="feather-eye"></i>
-                                                        </a>
-
-                                                    </div>
-                                                </td>
-                                            </tr>
-
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                            <div class="card-footer">
-                                <ul class="list-unstyled d-flex align-items-center gap-2 mb-0 pagination-common-style">
-                                    <li>
-                                        <a href="javascript:void(0);"><i class="bi bi-arrow-left"></i></a>
-                                    </li>
-                                    <li><a href="javascript:void(0);" class="active">1</a></li>
-                                    <li><a href="javascript:void(0);">2</a></li>
-                                    <li>
-                                        <a href="javascript:void(0);"><i class="bi bi-dot"></i></a>
-                                    </li>
-                                    <li><a href="javascript:void(0);">8</a></li>
-                                    <li><a href="javascript:void(0);">9</a></li>
-                                    <li>
-                                        <a href="javascript:void(0);"><i class="bi bi-arrow-right"></i></a>
-                                    </li>
-                                </ul>
+                                    <div class="row">
+                                        <div class="col-lg-6 mb-4">
+                                            <label class="form-label">Publisher<span class="text-danger">*</span></label>
+                                            <select class="form-select" data-select2-selector="user">
+                                                <option value="#" data-user="1">Krills Publishers</option>
+                                                <option value=""3 data-user="2">Nembers Publishers</option>
+                                                
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-6 mb-4">
+                                            <label class="form-label">Publishicaton Date <span class="text-danger">*</span></label>
+                                            <input type="date" class="form-control" placeholder="Date">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6 mb-4">
+                                            <label class="form-label">Section<span class="text-danger">*</span></label>
+                                            <select class="form-select" data-select2-selector="user">
+                                                <option value="#" data-user="1">Non fiction</option>
+                                                <option value="#" data-user="2">Fiction</option>
+                                                <option value="#" data-user="2">Reference</option>
+                                                
+                                            </select>
+                                        </div>
+                                        <!-- Consume api that get sub section by section and poluate section -->
+                                        <div class="col-lg-6 mb-4">
+                                            <label class="form-label">Sub Section Type<span class="text-danger">*</span></label>
+                                            <select class="form-select" data-select2-selector="user">
+                                                <option value="#" data-user="1">Mathematics</option>
+                                                <option value="#" data-user="2">Science</option>
+                                                <option value="#" data-user="2">Horror</option>
+                                                
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6 mb-4">
+                                            <label class="form-label">ISBN<span class="text-danger">*</span></label>
+                                            <input type="number" class="form-control" name="number_pages" id="" placeholder="eg: 978-3-16-148410-0">
+                                        </div>
+                                        <div class="col-lg-6 mb-4">
+                                            <label class="form-label">Number of Copies<span class="text-danger">*</span></label>
+                                            <input type="number" class="form-control" name="number_pages" id="" placeholder="eg: 40">
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6 mb-4">
+                                            <label class="form-label">Edition Number <span class="text-danger">*</span></label>
+                                            <input type="number" class="form-control" name="number_pages" id="" placeholder="eg: 1st">
+                                        </div>
+                                        <div class="col-lg-6 mb-4">
+                                            <label class="form-label">Number of Pages<span class="text-danger">*</span></label>
+                                            <input type="number" class="form-control" name="number_pages" id="" placeholder="eg: 230">
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6 mb-4">
+                                            <label class="form-label">Price<span class="text-danger">*</span></label>
+                                            <input type="number" class="form-control" name="number_pages" id="" placeholder="eg: K600">
+                                        </div>
+                                        <div class="col-lg-6 mb-4">
+                                            <label class="form-label">Cover Image<span class="text-danger">*</span></label>
+                                            <input type="file" class="form-control"  id="" placeholder="eg: K600">
+                                        </div>
+                                    </div>
+                                    <input type="submit" class="btn btn-md btn-primary"  >
+                                    <!-- <button id="add_row" class="btn btn-md btn-primary">Add User</button> -->
+                                </form>
                             </div>
                         </div>
                     </div>

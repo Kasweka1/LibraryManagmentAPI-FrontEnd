@@ -10,7 +10,7 @@
     <meta name="author" content="theme_ocean" />
     <!--! The above 6 meta tags *must* come first in the head; any other head content must come *after* these tags !-->
     <!--! BEGIN: Apps Title-->
-    <title>All Books</title>
+    <title>Book Lending</title>
     <!--! END:  Apps Title-->
     <!--! BEGIN: Favicon-->
     <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico" />
@@ -80,23 +80,26 @@
                                     class="feather-chevron-right"></i></span>
                         </a>
                         <ul class="nxl-submenu">
-                            <li class="nxl-item"><a class="nxl-link" href="apps-chat.html">Sections</a></li>
-                            <li class="nxl-item"><a class="nxl-link" href="apps-chat.html">Publishers</a></li>
-                            <li class="nxl-item"><a class="nxl-link" href="apps-email.html">Genres</a></li>
-                            <li class="nxl-item"><a class="nxl-link" href="apps-tasks.html">Authors</a></li>
-                            <li class="nxl-item"><a class="nxl-link" href="apps-notes.html">Books</a></li>
+                            <li class="nxl-item"><a class="nxl-link" href="sections.html">Sections</a></li>
+                            <li class="nxl-item"><a class="nxl-link" href="sub_section.html">Sub Sections</a></li>
+                            <li class="nxl-item"><a class="nxl-link" href="publishers.html">Publishers</a></li>
+                            <li class="nxl-item"><a class="nxl-link" href="authors.html">Authors</a></li>
+                            
                         </ul>
                     </li>
                     <li class="nxl-item nxl-hasmenu">
                         <a href="javascript:void(0);" class="nxl-link">
                             <span class="nxl-micon"><i class="feather-external-link"></i></span>
-                            <span class="nxl-mtext">Circulation</span><span class="nxl-arrow"><i
+                            <span class="nxl-mtext">Book Circulation</span><span class="nxl-arrow"><i
                                     class="feather-chevron-right"></i></span>
                         </a>
                         <ul class="nxl-submenu">
-                            <li class="nxl-item"><a class="nxl-link" href="proposal.html">Borrowed Books</a></li>
-                            <li class="nxl-item"><a class="nxl-link" href="proposal-view.html">Returned Books</a></li>
-                            <li class="nxl-item"><a class="nxl-link" href="proposal-edit.html">Long Overdue Books</a>
+                            <li class="nxl-item"><a class="nxl-link" href="add_book.html">Add Book</a></li>
+                            <li class="nxl-item"><a class="nxl-link" href="books.html">All Books</a></li>
+                            <li class="nxl-item"><a class="nxl-link" href="borrowed_books.html">Borrowed Books</a></li>
+                            <li class="nxl-item"><a class="nxl-link" href="returned_books.html">Returned Books</a></li>
+                            <li class="nxl-item"><a class="nxl-link" href="long_overdue_books.html">Long Overdue Books</a>
+                            <li class="nxl-item"><a class="nxl-link" href="book_lending.html">Book Lending</a>
                             </li>
                         </ul>
                     </li>
@@ -318,13 +321,12 @@
             <!-- [ page-header ] start -->
             <div class="page-header">
                 <div class="page-header-left d-flex align-items-center">
-
                     <div class="page-header-title">
                         <h5 class="m-b-10">Dashboard</h5>
                     </div>
                     <ul class="breadcrumb">
                         <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                        <li class="breadcrumb-item">Books</li>
+                        <li class="breadcrumb-item">Dashboard</li>
                     </ul>
                 </div>
                 <div class="page-header-right ms-auto">
@@ -353,115 +355,180 @@
             <!-- [ Main Content ] start -->
             <div class="main-content">
                 <div class="row">
-             
-                    <div class="col-lg-12">
-                        <div class="card stretch stretch-full">
-                            <div class="card-header d-flex justify-content-between align-items-center">
-                                <h5 class="card-title">Books</h5>
-                                <div class="d-flex align-items-center">
-                                   
-                                    <div class="card-header-action me-3" >
-                                        <div class="card-header-btn">
-                                            <div data-bs-toggle="tooltip" title="Refresh">
-                                                <a href="javascript:void(0);" class="avatar-text avatar-xs bg-warning"
-                                                    data-bs-toggle="refresh"> </a>
-                                            </div>
-                                            <div data-bs-toggle="tooltip" title="Maximize/Minimize">
-                                                <a href="javascript:void(0);" class="avatar-text avatar-xs bg-success"
-                                                    data-bs-toggle="expand"> </a>
-                                            </div>
+
+                    <div class="col-xxl-12  col-lg-12">
+                        <div class="card stretch stretch-full overflow-hidden">
+                            <div class="bg-primary text-white">
+                                <div class="p-4 d-flex justify-content-between align-items-center">
+                                    <h5 class="text-reset">Book Lending </h5>
+                                    
+                                </div>
+                                
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="d-flex align-items-center gap-3">
+                                        <div class="avatar-text avatar-lg bg-soft-primary text-primary border-soft-primary rounded">
+                                            <i class="feather-user"></i>
+                                        </div>
+                                        
+                                        <div class="col-lg-12 mb-4">
+                                            <label class="form-label">Library ID<span
+                                                    class="text-danger">*</span></label>
+                                            <input type="text" class="form-control" placeholder="20214018">
+                                        </div>
+                                        <div class="col-lg-12 mb-4">
+                                            <label class="form-label">Last Name <span
+                                                    class="text-danger">*</span></label>
+                                            <input type="text" class="form-control" placeholder="last Name">
                                         </div>
                                     </div>
-                                    <!-- <a href="javascript:void(0);" class="btn btn-primary ">
-                                        <i class="feather-save me-2"></i>
-                                        <span>Add Section</span>
-                                    </a> -->
                                 </div>
+                                <hr class="border-top-dashed">
+                               
                             </div>
-                            
+                        </div>
+                    </div>
+                    
+                    <div class=" col-xl-6">
+                    <div class="card stretch stretch-full">
+                        <div class="card-body">
+                            <div class="mb-4 text-center">
+                                <div class="wd-150 ht-150 mx-auto mb-3 position-relative">
+                                    <div class="avatar-image wd-150 ht-150 border border-5 border-gray-3">
+                                        <img src="assets/images/avatar/1.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="wd-10 ht-10 text-success rounded-circle position-absolute translate-middle" style="top: 76%; right: 10px">
+                                        <i class="bi bi-patch-check-fill"></i>
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <a href="javascript:void(0);" class="fs-14 fw-bold d-block"> Alexandra Della</a>
+                                    <a href="javascript:void(0);" class="fs-12 fw-normal text-muted d-block">alex.della@outlook.com</a>
+                                </div>
+                               
+                            </div>
+                            <ul class="list-unstyled mb-4">
+                                <li class="hstack justify-content-between mb-4">
+                                    <span class="text-muted fw-medium hstack gap-3"><i class="feather-credit-card"></i>Libray ID</span>
+                                    <a href="javascript:void(0);" class="float-end">20216865</a>
+                                </li>
+                                <li class="hstack justify-content-between mb-4">
+                                    <span class="text-muted fw-medium hstack gap-3"><i class="feather-phone"></i>Phone</span>
+                                    <a href="javascript:void(0);" class="float-end">+01 (375) 2589 645</a>
+                                </li>
+                                <li class="hstack justify-content-between mb-4">
+                                    <span class="text-muted fw-medium hstack gap-3"><i class="feather-map"></i>Address</span>
+                                    <a href="javascript:void(0);" class="float-end">Lusaka</a>
+                                </li>
+                                <li class="hstack justify-content-between mb-0">
+                                    <span class="text-muted fw-medium hstack gap-3"><i class="feather-book"></i>Borrowed Book</span>
+                                    <a href="javascript:void(0);" class="float-end">None</a>
+                                </li>
+                            </ul>
+                            <div class="d-flex gap-2 text-center pt-4">
+                               
+                                <a href="javascript:void(0);" class="w-50 btn btn-primary">
+                                    <i class="feather-edit me-2"></i>
+                                    <span>See Profile</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="col-xxl-6 col-lg-6">
+                        <div class="card stretch stretch-full">
+                            <div class="card-header">
+                                <h5 class="card-title">Catalog Overview</h5>
+
+                            </div>
+                         
                             <div class="card-body custom-card-action p-0">
                                 <div class="table-responsive">
                                     <table class="table table-hover mb-0">
-                                        <thead>
-                                            <tr>
-                                                <th scope="col">ID</th>
-                                                <th scope="col" class="w-25">Title</th>
-                                                <th scope="col" class="w-25">Author</th>
-                                                <th scope="col" class="w-25">No of copies</th>
-                                             
-                                                <th scope="col" class="w-25">Sub Section</th>
-                                                <th scope="col" class="w-25">ISBN</th>
-                                                <th scope="col" class="text-end">Action</th>
-                                            </tr>
-                                        </thead>
                                         <tbody>
                                             <tr>
                                                 <td>
-                                                    <div class="hstack gap-3">
-                                                        <div>
-                                                            <p class="d-block mb-1">001</p>
-                                                        </div>
-                                                    </div>
+                                                    <a href="javascript:void(0);">
+                                                        <i class="fa fa-list fs-16 text-primary me-2"></i>
+                                                        <span>Sections</span>
+                                                    </a>
                                                 </td>
                                                 <td>
-                                                    <div class="fs-12 fw-medium mb-2">The Pringles</div>
-                                                </td>
-                                                <td>
-                                                    <div class="fs-12 fw-medium mb-2">Chimweso Faith</div>
-                                                </td>
-                                                <td>
-                                                    <div class="fs-12 fw-medium mb-2">20</div>
-                                                </td>
-                                               
-                                               
-                                                <td>
-                                                    <div class="fs-12 fw-medium mb-2">Horror</div>
-                                                </td>
-                                                <td>
-                                                    <div class="fs-12 fw-medium mb-2">978-3-16-148410-0</div>
-                                                </td>
-                                                </td>
-                                                <td>
-                                                    <div class="hstack gap-2 justify-content-end">
-                                                        <a href="javascript:void(0);" class="avatar-text avatar-md">
-                                                            <i class="feather-edit"></i>
-                                                        </a>
-                                                        <a href="javascript:void(0);" class="avatar-text avatar-md">
-                                                            <i class="feather-trash-2"></i>
-                                                        </a>
-                                                        <a href="javascript:void(0);" class="avatar-text avatar-md">
-                                                            <i class="feather-eye"></i>
-                                                        </a>
+                                                    <span class="text-end d-flex align-items-center m-0">
+                                                        <span class="me-3">90%</span>
 
-                                                    </div>
+                                                    </span>
                                                 </td>
                                             </tr>
+                                            <tr>
+                                                <td>
+                                                    <a href="javascript:void(0);">
+                                                        <i class="fa fa-tag fs-16 text-primary me-2"></i>
+                                                        <span>Sub Sections</span>
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <span class="text-end d-flex align-items-center m-0">
+                                                        <span class="me-3">20%</span>
 
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a href="javascript:void(0);">
+                                                        <i class="fa fa-male fs-16 text-primary me-2"></i>
+                                                        <span>Authors</span>
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <span class="text-end d-flex align-items-center m-0">
+                                                        <span class="me-3">76%</span>
+
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a href="javascript:void(0);">
+                                                        <i class="fa fa-building fs-16 text-primary me-2"></i>
+                                                        <span>Publishers</span>
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <span class="text-end d-flex align-items-center m-0">
+                                                        <span class="me-3">50%</span>
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            
+                                            <tr>
+                                                <td>
+                                                    <a href="javascript:void(0);">
+                                                        <i class="fa fa-book fs-16 text-primary me-2"></i>
+                                                        <span>Books</span>
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <span class="text-end d-flex align-items-center m-0">
+                                                        <span class="me-3">15%</span>
+
+                                                    </span>
+                                                </td>
+                                            </tr>
                                         </tbody>
                                     </table>
                                 </div>
                             </div>
-                            <div class="card-footer">
-                                <ul class="list-unstyled d-flex align-items-center gap-2 mb-0 pagination-common-style">
-                                    <li>
-                                        <a href="javascript:void(0);"><i class="bi bi-arrow-left"></i></a>
-                                    </li>
-                                    <li><a href="javascript:void(0);" class="active">1</a></li>
-                                    <li><a href="javascript:void(0);">2</a></li>
-                                    <li>
-                                        <a href="javascript:void(0);"><i class="bi bi-dot"></i></a>
-                                    </li>
-                                    <li><a href="javascript:void(0);">8</a></li>
-                                    <li><a href="javascript:void(0);">9</a></li>
-                                    <li>
-                                        <a href="javascript:void(0);"><i class="bi bi-arrow-right"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
+                            
+
                         </div>
                     </div>
+                    <!-- [Mini Card] end -->
+                    <!--! END: [Team Progress] !-->
                 </div>
-
             </div>
             <!-- [ Main Content ] end -->
         </div>
