@@ -80,23 +80,26 @@
                                     class="feather-chevron-right"></i></span>
                         </a>
                         <ul class="nxl-submenu">
-                            <li class="nxl-item"><a class="nxl-link" href="apps-chat.html">Sections</a></li>
-                            <li class="nxl-item"><a class="nxl-link" href="apps-chat.html">Publishers</a></li>
-                            <li class="nxl-item"><a class="nxl-link" href="apps-email.html">Genres</a></li>
-                            <li class="nxl-item"><a class="nxl-link" href="apps-tasks.html">Authors</a></li>
-                            <li class="nxl-item"><a class="nxl-link" href="apps-notes.html">Books</a></li>
+                            <li class="nxl-item"><a class="nxl-link" href="sections.html">Sections</a></li>
+                            <li class="nxl-item"><a class="nxl-link" href="sub_section.html">Sub Sections</a></li>
+                            <li class="nxl-item"><a class="nxl-link" href="publishers.html">Publishers</a></li>
+                            <li class="nxl-item"><a class="nxl-link" href="authors.html">Authors</a></li>
+                            
                         </ul>
                     </li>
                     <li class="nxl-item nxl-hasmenu">
                         <a href="javascript:void(0);" class="nxl-link">
                             <span class="nxl-micon"><i class="feather-external-link"></i></span>
-                            <span class="nxl-mtext">Circulation</span><span class="nxl-arrow"><i
+                            <span class="nxl-mtext">Book Circulation</span><span class="nxl-arrow"><i
                                     class="feather-chevron-right"></i></span>
                         </a>
                         <ul class="nxl-submenu">
-                            <li class="nxl-item"><a class="nxl-link" href="proposal.html">Borrowed Books</a></li>
-                            <li class="nxl-item"><a class="nxl-link" href="proposal-view.html">Returned Books</a></li>
-                            <li class="nxl-item"><a class="nxl-link" href="proposal-edit.html">Long Overdue Books</a>
+                            <li class="nxl-item"><a class="nxl-link" href="add_book.html">Add Book</a></li>
+                            <li class="nxl-item"><a class="nxl-link" href="books.html">All Books</a></li>
+                            <li class="nxl-item"><a class="nxl-link" href="borrowed_books.html">Borrowed Books</a></li>
+                            <li class="nxl-item"><a class="nxl-link" href="returned_books.html">Returned Books</a></li>
+                            <li class="nxl-item"><a class="nxl-link" href="long_overdue_books.html">Long Overdue Books</a>
+                            <li class="nxl-item"><a class="nxl-link" href="book_lending.html">Book Lending</a>
                             </li>
                         </ul>
                     </li>
@@ -392,6 +395,7 @@
                                                 <th scope="col" class="w-25">Borrowed Date</th>
                                                 <th scope="col" class="w-25">Return Date</th>
                                                 <th scope="col" class="text-end">Overdue</th>   
+                                                <th scope="col" class="text-end">Action</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -424,7 +428,15 @@
                                                 <td>
                                                     <div class="fs-12 fw-medium mb-2">No</div>
                                                 </td>
-                                            
+                                                <td>
+                                                    <div class="hstack gap-2 justify-content-end">
+                                                       
+                                                        <a href="javascript:void(0);" class="avatar-text avatar-md">
+                                                            <i class="feather-eye"></i>
+                                                        </a>
+
+                                                    </div>
+                                                </td>
                                             </tr>
 
                                         </tbody>

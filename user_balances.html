@@ -10,7 +10,7 @@
     <meta name="author" content="theme_ocean" />
     <!--! The above 6 meta tags *must* come first in the head; any other head content must come *after* these tags !-->
     <!--! BEGIN: Apps Title-->
-    <title>Toshokan || Users</title>
+    <title>Library Charges</title>
     <!--! END:  Apps Title-->
     <!--! BEGIN: Favicon-->
     <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico" />
@@ -111,6 +111,8 @@
                         </a>
                         <ul class="nxl-submenu">
                             <li class="nxl-item"><a class="nxl-link" href="invoice-view.html">Manage Wallet</a></li>
+                            <li class="nxl-item"><a class="nxl-link" href="library_charges.html">Library Charges</a></li>
+                            <li class="nxl-item"><a class="nxl-link" href="user_balances.html">Balances</a></li>
                         </ul>
 
 
@@ -326,7 +328,7 @@
                     </div>
                     <ul class="breadcrumb">
                         <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                        <li class="breadcrumb-item">Add User</li>
+                        <li class="breadcrumb-item">Dashboard</li>
                     </ul>
                 </div>
                 <div class="page-header-right ms-auto">
@@ -355,72 +357,90 @@
             <!-- [ Main Content ] start -->
             <div class="main-content">
                 <div class="row">
-                    <div class="col-xl-12">
+                    <div class="col-lg-12">
                         <div class="card stretch stretch-full">
-                            <div class="card-body">
-                                <form action="">
-                                    <div class="row">
-                                        <div class="col-lg-6 mb-4">
-                                            <label class="form-label">First Name <span
-                                                    class="text-danger">*</span></label>
-                                            <input type="text" class="form-control" placeholder="First Name">
-                                        </div>
-                                        <div class="col-lg-6 mb-4">
-                                            <label class="form-label">Last Name <span
-                                                    class="text-danger">*</span></label>
-                                            <input type="text" class="form-control" placeholder="last Name">
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-lg-6 mb-4">
-                                            <label class="form-label">Username <span
-                                                    class="text-danger">*</span></label>
-                                            <input type="text" class="form-control" placeholder="Username">
-                                        </div>
-                                        <div class="col-lg-6 mb-4">
-                                            <label class="form-label">Email <span class="text-danger">*</span></label>
-                                            <input type="email" class="form-control" placeholder="Email">
+                            <div class="card-header d-flex justify-content-between align-items-center">
+                                <h5 class="card-title">Books</h5>
+                                <div class="d-flex align-items-center">
+                                   
+                                    <div class="card-header-action me-3" >
+                                        <div class="card-header-btn">
+                                            <div data-bs-toggle="tooltip" title="Refresh">
+                                                <a href="javascript:void(0);" class="avatar-text avatar-xs bg-warning"
+                                                    data-bs-toggle="refresh"> </a>
+                                            </div>
+                                            <div data-bs-toggle="tooltip" title="Maximize/Minimize">
+                                                <a href="javascript:void(0);" class="avatar-text avatar-xs bg-success"
+                                                    data-bs-toggle="expand"> </a>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="row">
-                                        <div class="col-lg-6 mb-4">
-                                            <label class="form-label">Phone Number <span
-                                                    class="text-danger">*</span></label>
-                                            <input type="tel" class="form-control" placeholder="Email">
-                                        </div>
-                                        <div class="col-lg-6 mb-4">
-                                            <label class="form-label">Address<span class="text-danger">*</span></label>
-                                            <input type="text" class="form-control" placeholder="Address">
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-lg-6 mb-4">
-                                            <label class="form-label">Gender<span class="text-danger">*</span></label>
-                                            <select class="form-select" data-select2-selector="user">
-                                                <option value="M" data-user="1">Male</option>
-                                                <option value="F" data-user="2">Female</option>
-                                                
-                                            </select>
-                                        </div>
-                                        <div class="col-lg-6 mb-4">
-                                            <label class="form-label">Role<span class="text-danger">*</span></label>
-                                            <select class="form-select" data-select2-selector="user">
-                                                <option value="admin" data-user="1">Admin</option>
-                                                <option value="staff" data-user="2">Librarian</option>
-                                                <option value="student" data-user="3">Student</option>
-                                                <option value="visitor" data-user="4">Vistor</option>
+                                    <!-- <a href="javascript:void(0);" class="btn btn-primary ">
+                                        <i class="feather-save me-2"></i>
+                                        <span>Add Section</span>
+                                    </a> -->
+                                </div>
+                            </div>
+                            
+                            <div class="card-body custom-card-action p-0">
+                                <div class="table-responsive">
+                                    <table class="table table-hover mb-0">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">ID</th>
+                                                <th scope="col" class="w-25">User</th>
+                                                <th scope="col" class="w-25">Library ID</th>
+                                                <th scope="col" class="w-25">Amount Owing</th>
                                              
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <input type="submit" class="btn btn-md btn-primary"  >
-                                    <!-- <button id="add_row" class="btn btn-md btn-primary">Add User</button> -->
-                                </form>
+                                                
+                                                
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="hstack gap-3">
+                                                        <div>
+                                                            <p class="d-block mb-1">001</p>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="fs-12 fw-medium mb-2">Wababa Michael</div>
+                                                </td>
+                                                <td>
+                                                    <div class="fs-12 fw-medium mb-2">202104029</div>
+                                                </td>
+                                                <td>
+                                                    <div class="fs-12 fw-medium mb-2">K60</div>
+                                                </td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <ul class="list-unstyled d-flex align-items-center gap-2 mb-0 pagination-common-style">
+                                    <li>
+                                        <a href="javascript:void(0);"><i class="bi bi-arrow-left"></i></a>
+                                    </li>
+                                    <li><a href="javascript:void(0);" class="active">1</a></li>
+                                    <li><a href="javascript:void(0);">2</a></li>
+                                    <li>
+                                        <a href="javascript:void(0);"><i class="bi bi-dot"></i></a>
+                                    </li>
+                                    <li><a href="javascript:void(0);">8</a></li>
+                                    <li><a href="javascript:void(0);">9</a></li>
+                                    <li>
+                                        <a href="javascript:void(0);"><i class="bi bi-arrow-right"></i></a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
-
+            
             </div>
             <!-- [ Main Content ] end -->
         </div>

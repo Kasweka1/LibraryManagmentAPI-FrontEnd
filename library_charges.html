@@ -10,7 +10,7 @@
     <meta name="author" content="theme_ocean" />
     <!--! The above 6 meta tags *must* come first in the head; any other head content must come *after* these tags !-->
     <!--! BEGIN: Apps Title-->
-    <title>Toshokan || Users</title>
+    <title>Library Charges</title>
     <!--! END:  Apps Title-->
     <!--! BEGIN: Favicon-->
     <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico" />
@@ -111,6 +111,8 @@
                         </a>
                         <ul class="nxl-submenu">
                             <li class="nxl-item"><a class="nxl-link" href="invoice-view.html">Manage Wallet</a></li>
+                            <li class="nxl-item"><a class="nxl-link" href="library_charges.html">Library Charges</a></li>
+                            <li class="nxl-item"><a class="nxl-link" href="user_balances.html">Balances</a></li>
                         </ul>
 
 
@@ -326,7 +328,7 @@
                     </div>
                     <ul class="breadcrumb">
                         <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                        <li class="breadcrumb-item">Add User</li>
+                        <li class="breadcrumb-item">Dashboard</li>
                     </ul>
                 </div>
                 <div class="page-header-right ms-auto">
@@ -361,58 +363,25 @@
                                 <form action="">
                                     <div class="row">
                                         <div class="col-lg-6 mb-4">
-                                            <label class="form-label">First Name <span
+                                            <label class="form-label">Library Subscription Fee <span
                                                     class="text-danger">*</span></label>
-                                            <input type="text" class="form-control" placeholder="First Name">
+                                            <input type="number" class="form-control" placeholder="K50">
                                         </div>
                                         <div class="col-lg-6 mb-4">
-                                            <label class="form-label">Last Name <span
+                                            <label class="form-label">Overdue Fine<span
                                                     class="text-danger">*</span></label>
-                                            <input type="text" class="form-control" placeholder="last Name">
+                                            <input type="number" class="form-control" placeholder="K20">
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-lg-6 mb-4">
-                                            <label class="form-label">Username <span
+                                            <label class="form-label">Penalty Fee(Lost or Damaged Book) <span
                                                     class="text-danger">*</span></label>
-                                            <input type="text" class="form-control" placeholder="Username">
+                                            <input type="number" class="form-control" placeholder="K50">
                                         </div>
-                                        <div class="col-lg-6 mb-4">
-                                            <label class="form-label">Email <span class="text-danger">*</span></label>
-                                            <input type="email" class="form-control" placeholder="Email">
-                                        </div>
+                                       
                                     </div>
-                                    <div class="row">
-                                        <div class="col-lg-6 mb-4">
-                                            <label class="form-label">Phone Number <span
-                                                    class="text-danger">*</span></label>
-                                            <input type="tel" class="form-control" placeholder="Email">
-                                        </div>
-                                        <div class="col-lg-6 mb-4">
-                                            <label class="form-label">Address<span class="text-danger">*</span></label>
-                                            <input type="text" class="form-control" placeholder="Address">
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-lg-6 mb-4">
-                                            <label class="form-label">Gender<span class="text-danger">*</span></label>
-                                            <select class="form-select" data-select2-selector="user">
-                                                <option value="M" data-user="1">Male</option>
-                                                <option value="F" data-user="2">Female</option>
-                                                
-                                            </select>
-                                        </div>
-                                        <div class="col-lg-6 mb-4">
-                                            <label class="form-label">Role<span class="text-danger">*</span></label>
-                                            <select class="form-select" data-select2-selector="user">
-                                                <option value="admin" data-user="1">Admin</option>
-                                                <option value="staff" data-user="2">Librarian</option>
-                                                <option value="student" data-user="3">Student</option>
-                                                <option value="visitor" data-user="4">Vistor</option>
-                                             
-                                            </select>
-                                        </div>
-                                    </div>
+                                   
                                     <input type="submit" class="btn btn-md btn-primary"  >
                                     <!-- <button id="add_row" class="btn btn-md btn-primary">Add User</button> -->
                                 </form>
@@ -420,7 +389,7 @@
                         </div>
                     </div>
                 </div>
-
+            
             </div>
             <!-- [ Main Content ] end -->
         </div>
