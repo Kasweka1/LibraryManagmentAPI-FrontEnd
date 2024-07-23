@@ -10,7 +10,7 @@
     <meta name="author" content="theme_ocean" />
     <!--! The above 6 meta tags *must* come first in the head; any other head content must come *after* these tags !-->
     <!--! BEGIN: Apps Title-->
-    <title>Library Charges</title>
+    <title>Payments</title>
     <!--! END:  Apps Title-->
     <!--! BEGIN: Favicon-->
     <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico" />
@@ -359,7 +359,7 @@
                     </div>
                     <ul class="breadcrumb">
                         <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                        <li class="breadcrumb-item">Dashboard</li>
+                        <li class="breadcrumb-item">Add Book</li>
                     </ul>
                 </div>
                 <div class="page-header-right ms-auto">
@@ -388,39 +388,108 @@
             <!-- [ Main Content ] start -->
             <div class="main-content">
                 <div class="row">
-                    <div class="col-xl-12">
-                        <div class="card stretch stretch-full">
-                            <div class="card-body">
-                                <form action="">
-                                    <div class="row">
-                                        <div class="col-lg-6 mb-4">
-                                            <label class="form-label">Library Subscription Fee <span
-                                                    class="text-danger">*</span></label>
-                                            <input type="number" class="form-control" placeholder="K50">
-                                        </div>
-                                        <div class="col-lg-6 mb-4">
-                                            <label class="form-label">Overdue Fine<span
-                                                    class="text-danger">*</span></label>
-                                            <input type="number" class="form-control" placeholder="K20">
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-lg-6 mb-4">
-                                            <label class="form-label">Penalty Fee(Lost or Damaged Book) <span
-                                                    class="text-danger">*</span></label>
-                                            <input type="number" class="form-control" placeholder="K50">
-                                        </div>
-                                       
-                                    </div>
-                                   
-                                    <input type="submit" class="btn btn-md btn-primary"  >
-                                    <!-- <button id="add_row" class="btn btn-md btn-primary">Add User</button> -->
-                                </form>
+                    <div class="col-xxl-6 col-lg-6">
+                        <div class="card stretch stretch-full overflow-hidden">
+                            <div class="bg-primary text-white">
+                                <div class="p-4 d-flex justify-content-between align-items-center">
+                                    <h5 class="text-reset">User </h5>
+                                    
+                                </div>
+                                
                             </div>
+                            <div class="card-body">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="w-100">
+                                      <form action="" method="post">
+                                        <div class="mb-4">
+                                            <label class="form-label">User Library ID <span class="text-danger">*</span></label>
+                                            <input type="number" class="form-control" placeholder="eg: 202145677">
+                                        </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <hr class="border-top-dashed">
+                                <ul class="list-unstyled mb-4">
+                                    <li class="hstack justify-content-between mb-4">
+                                        <span class="text-muted fw-medium hstack gap-3"><i class="feather-credit-card"></i>Libray ID</span>
+                                        <a href="javascript:void(0);" class="float-end">20216865</a>
+                                    </li>
+                                    <li class="hstack justify-content-between mb-4">
+                                        <span class="text-muted fw-medium hstack gap-3"><i class="feather-phone"></i>Phone</span>
+                                        <a href="javascript:void(0);" class="float-end">+01 (375) 2589 645</a>
+                                    </li>
+                                    <li class="hstack justify-content-between mb-4">
+                                        <span class="text-muted fw-medium hstack gap-3"><i class="feather-map"></i>Address</span>
+                                        <a href="javascript:void(0);" class="float-end">Lusaka</a>
+                                    </li>
+                                    <li class="hstack justify-content-between mb-0">
+                                        <span class="text-muted fw-medium hstack gap-3"><i class="feather-book"></i>Balance</span>
+                                        <a href="javascript:void(0);" class="float-end">K400</a>
+                                    </li>
+                                </ul>
+                                <!-- <div class="d-flex gap-2 text-center pt-4 ">
+                                    
+                                    <a href="javascript:void(0);" class="w-50 btn btn-primary">
+                                        <i class="feather-edit me-2"></i>
+                                        <span>Generate ISBN</span>
+                                    </a>
+                                </div> -->
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-xxl-6 col-lg-6">
+                        <div class="card stretch stretch-full overflow-hidden">
+                            <div class="bg-danger text-white">
+                                <div class="p-4 d-flex justify-content-between align-items-center">
+                                    <h5 class="text-reset">Payment </h5>
+                                    
+                                </div>
+                                
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="w-100">
+                                      
+                                        <form action="" method="post">
+                                            <div class="w-100">
+                                               
+                                                  <div class="mb-4">
+                                                      <label class="form-label">Amount(K) <span class="text-danger">*</span></label>
+                                                      <input type="number" class="form-control" placeholder="eg: K50">
+                                                  </div>
+                                                 
+                                              </div>
+                                            <div class="w-100">
+                                                
+                                                  <div class="mb-4">
+                                                    <label class="form-label">Payment<span class="text-danger">*</span></label>
+                                                    <select class="form-select" data-select2-selector="user">
+                                                        <option value="#" data-user="1">Subscription Fees</option>
+                                                        <option value="#" data-user="2">Overdue Balance</option>
+                                                        <option value="#" data-user="2">Penalty</option>
+                                                    </select>
+                                                  </div>
+                                                 
+                                              </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <hr class="border-top-dashed">
+                               
+                                <div class="d-flex gap-2 text-center pt-4 ">
+                                    
+                                    <a href="javascript:void(0);" class="w-50 btn btn-danger">
+                                        <i class="feather-edit me-2"></i>
+                                        <span>Process</span>
+                                    </a>
+                                </div>
+                            </div>
+                            
                         </div>
                     </div>
                 </div>
-            
+
             </div>
             <!-- [ Main Content ] end -->
         </div>

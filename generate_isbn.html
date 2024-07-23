@@ -10,7 +10,7 @@
     <meta name="author" content="theme_ocean" />
     <!--! The above 6 meta tags *must* come first in the head; any other head content must come *after* these tags !-->
     <!--! BEGIN: Apps Title-->
-    <title>Library Charges</title>
+    <title>ISBN Genration </title>
     <!--! END:  Apps Title-->
     <!--! BEGIN: Favicon-->
     <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico" />
@@ -354,12 +354,13 @@
             <!-- [ page-header ] start -->
             <div class="page-header">
                 <div class="page-header-left d-flex align-items-center">
+
                     <div class="page-header-title">
                         <h5 class="m-b-10">Dashboard</h5>
                     </div>
                     <ul class="breadcrumb">
                         <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                        <li class="breadcrumb-item">Dashboard</li>
+                        <li class="breadcrumb-item">Books</li>
                     </ul>
                 </div>
                 <div class="page-header-right ms-auto">
@@ -388,39 +389,95 @@
             <!-- [ Main Content ] start -->
             <div class="main-content">
                 <div class="row">
-                    <div class="col-xl-12">
-                        <div class="card stretch stretch-full">
-                            <div class="card-body">
-                                <form action="">
-                                    <div class="row">
-                                        <div class="col-lg-6 mb-4">
-                                            <label class="form-label">Library Subscription Fee <span
-                                                    class="text-danger">*</span></label>
-                                            <input type="number" class="form-control" placeholder="K50">
-                                        </div>
-                                        <div class="col-lg-6 mb-4">
-                                            <label class="form-label">Overdue Fine<span
-                                                    class="text-danger">*</span></label>
-                                            <input type="number" class="form-control" placeholder="K20">
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-lg-6 mb-4">
-                                            <label class="form-label">Penalty Fee(Lost or Damaged Book) <span
-                                                    class="text-danger">*</span></label>
-                                            <input type="number" class="form-control" placeholder="K50">
-                                        </div>
-                                       
-                                    </div>
-                                   
-                                    <input type="submit" class="btn btn-md btn-primary"  >
-                                    <!-- <button id="add_row" class="btn btn-md btn-primary">Add User</button> -->
-                                </form>
+             
+                    <div class="col-xxl-6 col-lg-6">
+                        <div class="card stretch stretch-full overflow-hidden">
+                            <div class="bg-primary text-white">
+                                <div class="p-4 d-flex justify-content-between align-items-center">
+                                    <h5 class="text-reset">Book Search </h5>
+                                    
+                                </div>
+                                
                             </div>
+                            <div class="card-body">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="w-100">
+                                      
+                                        <div class="mb-4">
+                                            <label class="form-label">Book Name <span class="text-danger">*</span></label>
+                                            <input type="text" class="form-control" placeholder="Last Name">
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="border-top-dashed">
+                                <ul class="list-unstyled mb-4">
+                                    <li class="hstack justify-content-between mb-4">
+                                        <span class="text-muted fw-medium hstack gap-3"><i class="feather-credit-card"></i>Author</span>
+                                        <a href="javascript:void(0);" class="float-end">Chimweso Faith Mukoko</a>
+                                    </li>
+                                    <li class="hstack justify-content-between mb-4">
+                                        <span class="text-muted fw-medium hstack gap-3"><i class="feather-phone"></i>Publisher</span>
+                                        <a href="javascript:void(0);" class="float-end">RockFell Publishers</a>
+                                    </li>
+                                    <li class="hstack justify-content-between mb-4">
+                                        <span class="text-muted fw-medium hstack gap-3"><i class="feather-map"></i>ISBN</span>
+                                        <a href="javascript:void(0);" class="float-end">0998-3948-3349-33</a>
+                                    </li>
+                                    <li class="hstack justify-content-between mb-0">
+                                        <span class="text-muted fw-medium hstack gap-3"><i class="feather-book"></i>Avaliable Copies</span>
+                                        <a href="javascript:void(0);" class="float-end">3</a>
+                                    </li>
+                                </ul>
+                                <div class="d-flex gap-2 text-center pt-4 ">
+                                    
+                                    <a href="javascript:void(0);" class="w-50 btn btn-primary">
+                                        <i class="feather-edit me-2"></i>
+                                        <span>Generate ISBN</span>
+                                    </a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-xxl-6 col-lg-6">
+                        <div class="card stretch stretch-full overflow-hidden">
+                            <div class="bg-danger text-white">
+                                <div class="p-4 d-flex justify-content-between align-items-center">
+                                    <h5 class="text-reset">ISBN Generation </h5>
+                                    
+                                </div>
+                                
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="w-100">
+                                      
+                                        <div>
+                                            <div class="fs-4 fw-bold text-dark"><span class="counter">9876-89-765456</span></div>
+                                            <h3 class="fs-13 fw-semibold text-truncate-1-line">Generated ISBN</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="border-top-dashed">
+                                <div>
+                                    <!-- <div class="fs-4 fw-bold text-dark"><span class="counter">9876-89-765456</span></div> -->
+                                    <h3 class="fs-13 fw-semibold text-truncate-1-line">Bar Code</h3>
+                                    <img src="https://barcodeguide.seagullscientific.com/Content/Resources/Images/ISBN.GIF" class="img-fluid rounded mx-auto" alt="Responsive image">
+
+                                </div>
+                                <div class="d-flex gap-2 text-center pt-4 ">
+                                    
+                                    <a href="javascript:void(0);" class="w-50 btn btn-danger">
+                                        <i class="feather-edit me-2"></i>
+                                        <span>Print ISBN</span>
+                                    </a>
+                                </div>
+                            </div>
+                            
                         </div>
                     </div>
                 </div>
-            
+
             </div>
             <!-- [ Main Content ] end -->
         </div>

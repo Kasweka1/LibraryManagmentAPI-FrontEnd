@@ -24,6 +24,11 @@
     <!--! END: Vendors CSS-->
     <!--! BEGIN: Custom CSS-->
     <link rel="stylesheet" type="text/css" href="assets/css/theme.min.css" />
+
+
+    <!-- Data Tables -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/2.1.0/css/dataTables.dataTables.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/3.1.0/css/buttons.dataTables.css">
     <!--! END: Custom CSS-->
     <!--! HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries !-->
     <!--! WARNING: Respond.js doesn"t work if you view the page via file: !-->
@@ -69,7 +74,7 @@
                         </a>
                         <ul class="nxl-submenu">
                             <li class="nxl-item"><a class="nxl-link" href="staff_users.html">Librarian/Admins</a></li>
-                            <li class="nxl-item"><a class="nxl-link" href="student_users.html">Students/Vistors</a>
+                            <li class="nxl-item"><a class="nxl-link" href="student_users.html">Members</a>
                             <li class="nxl-item"><a class="nxl-link" href="add_user.html">Add User</a>
                         </ul>
                     </li>
@@ -84,7 +89,7 @@
                             <li class="nxl-item"><a class="nxl-link" href="sub_section.html">Sub Sections</a></li>
                             <li class="nxl-item"><a class="nxl-link" href="publishers.html">Publishers</a></li>
                             <li class="nxl-item"><a class="nxl-link" href="authors.html">Authors</a></li>
-                            
+
                         </ul>
                     </li>
                     <li class="nxl-item nxl-hasmenu">
@@ -96,11 +101,26 @@
                         <ul class="nxl-submenu">
                             <li class="nxl-item"><a class="nxl-link" href="add_book.html">Add Book</a></li>
                             <li class="nxl-item"><a class="nxl-link" href="books.html">All Books</a></li>
+                            <li class="nxl-item"><a class="nxl-link" href="generate_isbn.html">Generate ISBN</a></li>
                             <li class="nxl-item"><a class="nxl-link" href="borrowed_books.html">Borrowed Books</a></li>
                             <li class="nxl-item"><a class="nxl-link" href="returned_books.html">Returned Books</a></li>
-                            <li class="nxl-item"><a class="nxl-link" href="long_overdue_books.html">Long Overdue Books</a>
+                            <li class="nxl-item"><a class="nxl-link" href="long_overdue_books.html">Long Overdue
+                                    Books</a>
                             <li class="nxl-item"><a class="nxl-link" href="book_lending.html">Book Lending</a>
                             </li>
+                        </ul>
+                    </li>
+                    <li class="nxl-item nxl-hasmenu">
+                        <a href="javascript:void(0);" class="nxl-link">
+                            <span class="nxl-micon"><i class="feather-bar-chart"></i></span>
+                            <span class="nxl-mtext">Shelf</span><span class="nxl-arrow"><i
+                                    class="feather-chevron-right"></i></span>
+                        </a>
+                        <ul class="nxl-submenu">
+                            <li class="nxl-item"><a class="nxl-link" href="add_shelf.html">Add Shelf</a></li>
+                            <li class="nxl-item"><a class="nxl-link" href="shelves.html">Shelves</a></li>
+                            <li class="nxl-item"><a class="nxl-link" href="shelf_books.html">Shelf Books</a></li>
+
                         </ul>
                     </li>
                     <li class="nxl-item nxl-hasmenu">
@@ -110,10 +130,29 @@
                                     class="feather-chevron-right"></i></span>
                         </a>
                         <ul class="nxl-submenu">
-                            <li class="nxl-item"><a class="nxl-link" href="invoice-view.html">Manage Wallet</a></li>
+                            <li class="nxl-item"><a class="nxl-link" href="general_ledger.html">General Ledger</a></li>
+                            <li class="nxl-item"><a class="nxl-link" href="library_charges.html">Library Charges</a>
+                            </li>
+                            <li class="nxl-item"><a class="nxl-link" href="make_payment.html">Make Payment</a>
+                            </li>
+                            <li class="nxl-item"><a class="nxl-link" href="user_balances.html">Balances</a></li>
                         </ul>
 
+                    </li>
+                    <li class="nxl-item nxl-hasmenu">
+                        <a href="javascript:void(0);" class="nxl-link">
+                            <span class="nxl-micon"><i class="feather-database"></i></span>
+                            <span class="nxl-mtext">Inventory</span><span class="nxl-arrow"><i
+                                    class="feather-chevron-right"></i></span>
+                        </a>
+                        <ul class="nxl-submenu">
+                            <li class="nxl-item"><a class="nxl-link" href="add_inventory_item.html">Add Inventory
+                                    Item</a></li>
+                            <li class="nxl-item"><a class="nxl-link" href="inventory.html">All Inventory</a></li>
 
+                        </ul>
+
+                    </li>
                 </ul>
 
             </div>
@@ -359,8 +398,8 @@
                     <div class="col-lg-12">
                         <div class="card stretch stretch-full">
                             <div class="card-header">
-                                <h5 class="card-title">Students / Visitors</h5>
-                               
+                                <h5 class="card-title">Members</h5>
+
                                 <div class="card-header-action">
                                     <div class="card-header-btn">
                                         <div data-bs-toggle="tooltip" title="Refresh">
@@ -373,7 +412,7 @@
                                         </div>
                                     </div>
                                 </div>
-                              
+
                             </div>
                             <div class="card-body custom-card-action p-0">
                                 <div class="table-responsive">
@@ -424,7 +463,7 @@
                                                 </td>
                                                 <td>
                                                     <div class="hstack gap-2 justify-content-end">
-                                                        <a href="javascript:void(0);" class="avatar-text avatar-md">
+                                                        <a href="add_user.html" class="avatar-text avatar-md">
                                                             <i class="feather-edit"></i>
                                                         </a>
                                                         <a href="javascript:void(0);" class="avatar-text avatar-md">
@@ -458,6 +497,62 @@
                             </div>
                         </div>
                     </div>
+
+
+                    <!-- <div class="col-lg-12">
+                        <div class="card stretch stretch-full">
+                            <div class="card-header">
+                                <table id="example" class="display nowrap" style="width:100%">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Position</th>
+                                            <th>Office</th>
+                                            <th>Age</th>
+                                            <th>Start date</th>
+                                            <th>Salary</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Tiger Nixon</td>
+                                            <td>System Architect</td>
+                                            <td>Edinburgh</td>
+                                            <td>61</td>
+                                            <td>2011-04-25</td>
+                                            <td>$320,800</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Garrett Winters</td>
+                                            <td>Accountant</td>
+                                            <td>Tokyo</td>
+                                            <td>63</td>
+                                            <td>2011-07-25</td>
+                                            <td>$170,750</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ashton Cox</td>
+                                            <td>Junior Technical Author</td>
+                                            <td>San Francisco</std>
+                                            <td>66</td>
+                                            <td>2009-01-12</td>
+                                            <td>$86,000</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Position</th>
+                                            <th>Office</th>
+                                            <th>Age</th>
+                                            <th>Start date</th>
+                                            <th>Salary</th>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                        </div>
+                    </div>0.g -->
                 </div>
 
             </div>
@@ -598,6 +693,26 @@
 
     <script src="assets/js/widgets-charts-init.min.js"></script>
     <!--! END: Apps Init !-->
+
+
+    <!-- Datatables -->
+    <script>
+        new DataTable('#example', {
+            layout: {
+                topStart: {
+                    buttons: ['copy', 'csv', 'excel', 'pdf', 'print']
+                }
+            }
+        });
+    </script>
+
+    <script src="https://cdn.datatables.net/buttons/3.1.0/js/dataTables.buttons.js"></script>
+    <script src="https://cdn.datatables.net/buttons/3.1.0/js/buttons.dataTables.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
+    <script src="https://cdn.datatables.net/buttons/3.1.0/js/buttons.html5.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/3.1.0/js/buttons.print.min.js"></script>
 
     <!--! END: Theme Customizer !-->
     <!--! END: Theme Customizer !-->

@@ -10,7 +10,7 @@
     <meta name="author" content="theme_ocean" />
     <!--! The above 6 meta tags *must* come first in the head; any other head content must come *after* these tags !-->
     <!--! BEGIN: Apps Title-->
-    <title>Library Charges</title>
+    <title>All Shelves</title>
     <!--! END:  Apps Title-->
     <!--! BEGIN: Favicon-->
     <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico" />
@@ -354,12 +354,13 @@
             <!-- [ page-header ] start -->
             <div class="page-header">
                 <div class="page-header-left d-flex align-items-center">
+
                     <div class="page-header-title">
                         <h5 class="m-b-10">Dashboard</h5>
                     </div>
                     <ul class="breadcrumb">
                         <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                        <li class="breadcrumb-item">Dashboard</li>
+                        <li class="breadcrumb-item">Shelves</li>
                     </ul>
                 </div>
                 <div class="page-header-right ms-auto">
@@ -388,39 +389,119 @@
             <!-- [ Main Content ] start -->
             <div class="main-content">
                 <div class="row">
-                    <div class="col-xl-12">
+             
+                    <div class="col-lg-12">
                         <div class="card stretch stretch-full">
-                            <div class="card-body">
-                                <form action="">
-                                    <div class="row">
-                                        <div class="col-lg-6 mb-4">
-                                            <label class="form-label">Library Subscription Fee <span
-                                                    class="text-danger">*</span></label>
-                                            <input type="number" class="form-control" placeholder="K50">
-                                        </div>
-                                        <div class="col-lg-6 mb-4">
-                                            <label class="form-label">Overdue Fine<span
-                                                    class="text-danger">*</span></label>
-                                            <input type="number" class="form-control" placeholder="K20">
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-lg-6 mb-4">
-                                            <label class="form-label">Penalty Fee(Lost or Damaged Book) <span
-                                                    class="text-danger">*</span></label>
-                                            <input type="number" class="form-control" placeholder="K50">
-                                        </div>
-                                       
-                                    </div>
+                            <div class="card-header d-flex justify-content-between align-items-center">
+                                <h5 class="card-title">Shelves</h5>
+                                <div class="d-flex align-items-center">
                                    
-                                    <input type="submit" class="btn btn-md btn-primary"  >
-                                    <!-- <button id="add_row" class="btn btn-md btn-primary">Add User</button> -->
-                                </form>
+                                    <div class="card-header-action me-3" >
+                                        <div class="card-header-btn">
+                                            <div data-bs-toggle="tooltip" title="Refresh">
+                                                <a href="javascript:void(0);" class="avatar-text avatar-xs bg-warning"
+                                                    data-bs-toggle="refresh"> </a>
+                                            </div>
+                                            <div data-bs-toggle="tooltip" title="Maximize/Minimize">
+                                                <a href="javascript:void(0);" class="avatar-text avatar-xs bg-success"
+                                                    data-bs-toggle="expand"> </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- <a href="javascript:void(0);" class="btn btn-primary ">
+                                        <i class="feather-save me-2"></i>
+                                        <span>Add Section</span>
+                                    </a> -->
+                                </div>
+                            </div>
+                            
+                            <div class="card-body custom-card-action p-0">
+                                <div class="table-responsive">
+                                    <table class="table table-hover mb-0">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">ID</th>
+                                                <th scope="col" class="w-25">Code</th>
+                                                <th scope="col" class="w-25">Section</th>
+                                                <th scope="col" class="w-25">Location</th>
+                                             
+                                                <th scope="col" class="w-25">No of rows</th>
+                                                <th scope="col" class="w-25">Material</th>
+                                                <th scope="col" class="w-25">Condition</th>
+                                                <th scope="col" class="w-25">Status</th>
+                                                <th scope="col" class="text-end">Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="hstack gap-3">
+                                                        <div>
+                                                            <p class="d-block mb-1">001</p>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="fs-12 fw-medium mb-2">REF-001</div>
+                                                </td>
+                                                <td>
+                                                    <div class="fs-12 fw-medium mb-2">Reference</div>
+                                                </td>
+                                                <td>
+                                                    <div class="fs-12 fw-medium mb-2">Center</div>
+                                                </td>
+                                                <td>
+                                                    <div class="fs-12 fw-medium mb-2">4</div>
+                                                </td>
+                                                <td>
+                                                    <div class="fs-12 fw-medium mb-2">Wood</div>
+                                                </td>
+                                                <td>
+                                                    <div class="fs-12 fw-medium mb-2">New</div>
+                                                </td>
+                                                <td>
+                                                    <div class="fs-12 fw-medium mb-2">Available</div>
+                                                </td>
+                                                </td>
+                                                <td>
+                                                    <div class="hstack gap-2 justify-content-end">
+                                                      
+                                                        <a href="javascript:void(0);" class="avatar-text avatar-md">
+                                                            <i class="feather-trash-2"></i>
+                                                        </a>
+                                                        <a href="javascript:void(0);" class="avatar-text avatar-md">
+                                                            <i class="feather-eye"></i>
+                                                        </a>
+
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <ul class="list-unstyled d-flex align-items-center gap-2 mb-0 pagination-common-style">
+                                    <li>
+                                        <a href="javascript:void(0);"><i class="bi bi-arrow-left"></i></a>
+                                    </li>
+                                    <li><a href="javascript:void(0);" class="active">1</a></li>
+                                    <li><a href="javascript:void(0);">2</a></li>
+                                    <li>
+                                        <a href="javascript:void(0);"><i class="bi bi-dot"></i></a>
+                                    </li>
+                                    <li><a href="javascript:void(0);">8</a></li>
+                                    <li><a href="javascript:void(0);">9</a></li>
+                                    <li>
+                                        <a href="javascript:void(0);"><i class="bi bi-arrow-right"></i></a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
-            
+
             </div>
             <!-- [ Main Content ] end -->
         </div>

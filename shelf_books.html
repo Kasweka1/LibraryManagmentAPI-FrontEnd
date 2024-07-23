@@ -10,7 +10,7 @@
     <meta name="author" content="theme_ocean" />
     <!--! The above 6 meta tags *must* come first in the head; any other head content must come *after* these tags !-->
     <!--! BEGIN: Apps Title-->
-    <title>Library Charges</title>
+    <title>Shelf Book</title>
     <!--! END:  Apps Title-->
     <!--! BEGIN: Favicon-->
     <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico" />
@@ -359,7 +359,7 @@
                     </div>
                     <ul class="breadcrumb">
                         <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                        <li class="breadcrumb-item">Dashboard</li>
+                        <li class="breadcrumb-item">Add Shelf</li>
                     </ul>
                 </div>
                 <div class="page-header-right ms-auto">
@@ -394,33 +394,41 @@
                                 <form action="">
                                     <div class="row">
                                         <div class="col-lg-6 mb-4">
-                                            <label class="form-label">Library Subscription Fee <span
+                                            <label class="form-label">Section<span
                                                     class="text-danger">*</span></label>
-                                            <input type="number" class="form-control" placeholder="K50">
+                                                    <select class="form-select" data-select2-selector="user">
+                                                        <option value="#" data-user="1">Reference</option>
+                                                        <option value="#" data-user="2">Non-Fiction</option>
+                                                        <option value="#" data-user="2">Fiction</option>
+                                                    </select>
+                                        </div>
+                                     <div class="col-lg-6 mb-4">
+                                            <label class="form-label">Shelf<span
+                                                    class="text-danger">*</span></label>
+                                                    <select class="form-select" data-select2-selector="user">
+                                                        <option value="#" data-user="1">REF-001</option>
+                                                        <option value="#" data-user="2">REF-002</option>
+                                                        <option value="#" data-user="2">REF-003</option>
+                                                    </select>
                                         </div>
                                         <div class="col-lg-6 mb-4">
-                                            <label class="form-label">Overdue Fine<span
-                                                    class="text-danger">*</span></label>
-                                            <input type="number" class="form-control" placeholder="K20">
+                                            <label class="form-label">Book<span class="text-danger">*</span></label>
+                                            <select class="form-select" data-select2-selector="user">
+                                                <option value="#" data-user="1">The Pringles</option>
+                                                <option value="#" data-user="2">Banks of Zed</option>
+                                            </select>
                                         </div>
                                     </div>
-                                    <div class="row">
-                                        <div class="col-lg-6 mb-4">
-                                            <label class="form-label">Penalty Fee(Lost or Damaged Book) <span
-                                                    class="text-danger">*</span></label>
-                                            <input type="number" class="form-control" placeholder="K50">
-                                        </div>
-                                       
-                                    </div>
-                                   
-                                    <input type="submit" class="btn btn-md btn-primary"  >
+                                    
+                                    
+                                    <input type="submit" class="btn btn-md btn-primary"  value="Shelf">
                                     <!-- <button id="add_row" class="btn btn-md btn-primary">Add User</button> -->
                                 </form>
                             </div>
                         </div>
                     </div>
                 </div>
-            
+
             </div>
             <!-- [ Main Content ] end -->
         </div>

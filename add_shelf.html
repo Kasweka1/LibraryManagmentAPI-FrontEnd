@@ -10,7 +10,7 @@
     <meta name="author" content="theme_ocean" />
     <!--! The above 6 meta tags *must* come first in the head; any other head content must come *after* these tags !-->
     <!--! BEGIN: Apps Title-->
-    <title>Library Charges</title>
+    <title>Add Shelf</title>
     <!--! END:  Apps Title-->
     <!--! BEGIN: Favicon-->
     <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico" />
@@ -359,7 +359,7 @@
                     </div>
                     <ul class="breadcrumb">
                         <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                        <li class="breadcrumb-item">Dashboard</li>
+                        <li class="breadcrumb-item">Add Shelf</li>
                     </ul>
                 </div>
                 <div class="page-header-right ms-auto">
@@ -393,26 +393,61 @@
                             <div class="card-body">
                                 <form action="">
                                     <div class="row">
-                                        <div class="col-lg-6 mb-4">
-                                            <label class="form-label">Library Subscription Fee <span
+                                     <div class="col-lg-6 mb-4">
+                                            <label class="form-label">Shelf Section<span
                                                     class="text-danger">*</span></label>
-                                            <input type="number" class="form-control" placeholder="K50">
+                                                    <select class="form-select" data-select2-selector="user">
+                                                        <option value="#" data-user="1">Reference Section</option>
+                                                        <option value="#" data-user="2">Non Fiction</option>
+                                                        <option value="#" data-user="2">Fiction</option>
+                                                    </select>
                                         </div>
                                         <div class="col-lg-6 mb-4">
-                                            <label class="form-label">Overdue Fine<span
-                                                    class="text-danger">*</span></label>
-                                            <input type="number" class="form-control" placeholder="K20">
+                                            <label class="form-label">Shelf Location(Within Library)<span class="text-danger">*</span></label>
+                                            <select class="form-select" data-select2-selector="user">
+                                                <option value="#" data-user="1">Peter Griffin</option>
+                                                <option value="#" data-user="2">Homelander Phiri</option>
+                                            </select>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-lg-6 mb-4">
-                                            <label class="form-label">Penalty Fee(Lost or Damaged Book) <span
-                                                    class="text-danger">*</span></label>
-                                            <input type="number" class="form-control" placeholder="K50">
+                                            <label class="form-label">No of Rows<span class="text-danger">*</span></label>
+                                          
+                                                <input type="number" class="form-control" name="number_pages" id="" placeholder="10">
+                                                
+                                           
                                         </div>
-                                       
+                                        <div class="col-lg-6 mb-4">
+                                            <label class="form-label">Shelf Status <span class="text-danger">*</span></label>
+                                            <select class="form-select" data-select2-selector="user">
+                                                <option value="#" data-user="1">Available</option>
+                                                <option value="#" data-user="2">Not Available</option>
+                                                
+                                            </select>
+                                        </div>
                                     </div>
-                                   
+                                    <div class="row">
+                                        <div class="col-lg-6 mb-4">
+                                            <label class="form-label">Shelf Material <span class="text-danger">*</span></label>
+                                            <select class="form-select" data-select2-selector="user">
+                                                <option value="#" data-user="1">Wood</option>
+                                                <option value="#" data-user="2">Metal</option>
+                                                
+                                            </select>
+                                        </div>
+                                        <!-- Consume api that get sub section by section and poluate section -->
+                                        <div class="col-lg-6 mb-4">
+                                            <label class="form-label">Shelf Condition <span class="text-danger">*</span></label>
+                                            <select class="form-select" data-select2-selector="user">
+                                                <option value="#" data-user="1">New</option>
+                                                <option value="#" data-user="2">Old</option>
+                                                <option value="#" data-user="2">Damaged</option>
+                                                
+                                            </select>
+                                        </div>
+                                    </div>
+                                    
                                     <input type="submit" class="btn btn-md btn-primary"  >
                                     <!-- <button id="add_row" class="btn btn-md btn-primary">Add User</button> -->
                                 </form>
@@ -420,7 +455,7 @@
                         </div>
                     </div>
                 </div>
-            
+
             </div>
             <!-- [ Main Content ] end -->
         </div>
