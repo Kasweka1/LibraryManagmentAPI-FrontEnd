@@ -27,8 +27,9 @@
 
 
     <!-- Data Tables -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/2.1.0/css/dataTables.dataTables.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/3.1.0/css/buttons.dataTables.css">
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="https://cdn.datatables.net/v/bs5/jq-3.7.0/dt-2.1.0/b-3.1.0/b-html5-3.1.0/b-print-3.1.0/sc-2.4.3/datatables.min.css" rel="stylesheet">
+ 
     <!--! END: Custom CSS-->
     <!--! HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries !-->
     <!--! WARNING: Respond.js doesn"t work if you view the page via file: !-->
@@ -498,11 +499,11 @@
                         </div>
                     </div>
 
-
-                    <!-- <div class="col-lg-12">
+                    <div class="row">
+                    <div class="col-12">
                         <div class="card stretch stretch-full">
-                            <div class="card-header">
-                                <table id="example" class="display nowrap" style="width:100%">
+                            <div class="card-header ">
+                                <table id="example" class="table table-striped" >
                                     <thead>
                                         <tr>
                                             <th>Name</th>
@@ -533,10 +534,34 @@
                                         <tr>
                                             <td>Ashton Cox</td>
                                             <td>Junior Technical Author</td>
-                                            <td>San Francisco</std>
+                                            <td>San Francisco</td>
                                             <td>66</td>
                                             <td>2009-01-12</td>
                                             <td>$86,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Shad Decker</td>
+                                            <td>Regional Director</td>
+                                            <td>Edinburgh</td>
+                                            <td>51</td>
+                                            <td>2008-11-13</td>
+                                            <td>$183,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Michael Bruce</td>
+                                            <td>Javascript Developer</td>
+                                            <td>Singapore</td>
+                                            <td>29</td>
+                                            <td>2011-06-27</td>
+                                            <td>$183,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Donna Snider</td>
+                                            <td>Customer Support</td>
+                                            <td>New York</td>
+                                            <td>27</td>
+                                            <td>2011-01-25</td>
+                                            <td>$112,000</td>
                                         </tr>
                                     </tbody>
                                     <tfoot>
@@ -552,9 +577,9 @@
                                 </table>
                             </div>
                         </div>
-                    </div>0.g -->
+                    </div>
                 </div>
-
+                </div>
             </div>
             <!-- [ Main Content ] end -->
         </div>
@@ -695,25 +720,23 @@
     <!--! END: Apps Init !-->
 
 
-    <!-- Datatables -->
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
+    <script src="https://cdn.datatables.net/v/bs5/jq-3.7.0/dt-2.1.0/b-3.1.0/b-html5-3.1.0/b-print-3.1.0/sc-2.4.3/datatables.min.js"></script>
+    
+
     <script>
-        new DataTable('#example', {
+        $('#example').DataTable({
             layout: {
                 topStart: {
-                    buttons: ['copy', 'csv', 'excel', 'pdf', 'print']
+                    buttons: ['copy', 'excel', 'pdf', 'colvis']
                 }
             }
         });
     </script>
-
-    <script src="https://cdn.datatables.net/buttons/3.1.0/js/dataTables.buttons.js"></script>
-    <script src="https://cdn.datatables.net/buttons/3.1.0/js/buttons.dataTables.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
-    <script src="https://cdn.datatables.net/buttons/3.1.0/js/buttons.html5.min.js"></script>
-    <script src="https://cdn.datatables.net/buttons/3.1.0/js/buttons.print.min.js"></script>
-
     <!--! END: Theme Customizer !-->
     <!--! END: Theme Customizer !-->
 </body>
