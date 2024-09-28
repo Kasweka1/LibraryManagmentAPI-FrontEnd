@@ -61,7 +61,7 @@
                             <li class="nxl-item"><a class="nxl-link" href="analytics.html">Analytics</a></li> -->
                         </ul>
                     </li>
-                    <li class="nxl-item nxl-hasmenu">
+                     <li class="nxl-item nxl-hasmenu">
                         <a href="javascript:void(0);" class="nxl-link">
                             <span class="nxl-micon"><i class="feather-users"></i></span>
                             <span class="nxl-mtext">Users</span><span class="nxl-arrow"><i
@@ -75,13 +75,24 @@
                     </li>
                     <li class="nxl-item nxl-hasmenu">
                         <a href="javascript:void(0);" class="nxl-link">
+                            <span class="nxl-micon"><i class="feather-settings"></i></span>
+                            <span class="nxl-mtext">Library Management</span><span class="nxl-arrow"><i
+                                    class="feather-chevron-right"></i></span>
+                        </a>
+                        <ul class="nxl-submenu">
+                            <li class="nxl-item"><a class="nxl-link" href="library_configuration.html">Library Configuration</a></li>
+                            <li class="nxl-item"><a class="nxl-link" href="library_charges.html">Library Charges</a>
+                        </ul>
+                    </li>
+                    <li class="nxl-item nxl-hasmenu">
+                        <a href="javascript:void(0);" class="nxl-link">
                             <span class="nxl-micon"><i class="feather-grid"></i></span>
                             <span class="nxl-mtext">Catalog</span><span class="nxl-arrow"><i
                                     class="feather-chevron-right"></i></span>
                         </a>
                         <ul class="nxl-submenu">
                             <li class="nxl-item"><a class="nxl-link" href="sections.html">Sections</a></li>
-                            <li class="nxl-item"><a class="nxl-link" href="sub_section.html">Classifications</a></li>
+                            <li class="nxl-item"><a class="nxl-link" href="sub_section.html">Classification</a></li>
                             <li class="nxl-item"><a class="nxl-link" href="publishers.html">Publishers</a></li>
                             <li class="nxl-item"><a class="nxl-link" href="authors.html">Authors</a></li>
 
@@ -128,22 +139,20 @@
                            
                         </ul>
                     </li>
-                    <li class="nxl-item nxl-hasmenu">
-                        <a href="javascript:void(0);" class="nxl-link">
-                            <span class="nxl-micon"><i class="feather-dollar-sign"></i></span>
-                            <span class="nxl-mtext">Wallet</span><span class="nxl-arrow"><i
-                                    class="feather-chevron-right"></i></span>
-                        </a>
-                        <ul class="nxl-submenu">
-                            <li class="nxl-item"><a class="nxl-link" href="general_ledger.html">General Ledger</a></li>
-                            <li class="nxl-item"><a class="nxl-link" href="library_charges.html">Library Charges</a>
-                            </li>
-                            <li class="nxl-item"><a class="nxl-link" href="make_payment.html">Make Payment</a>
-                            </li>
-                            <li class="nxl-item"><a class="nxl-link" href="user_balances.html">Balances</a></li>
-                        </ul>
+                     <li class="nxl-item nxl-hasmenu">
+                    <a href="javascript:void(0);" class="nxl-link">
+                        <span class="nxl-micon"><i class="feather-dollar-sign"></i></span>
+                        <span class="nxl-mtext">Wallet</span><span class="nxl-arrow"><i
+                                class="feather-chevron-right"></i></span>
+                    </a>
+                    <ul class="nxl-submenu">
+                        <li class="nxl-item"><a class="nxl-link" href="general_ledger.html">General Ledger</a></li>
+                        <li class="nxl-item"><a class="nxl-link" href="make_payment.html">Make Payment</a>
+                        </li>
+                        <li class="nxl-item"><a class="nxl-link" href="user_balances.html">Balances</a></li>
+                    </ul>
 
-                    </li>
+                </li>
                     <li class="nxl-item nxl-hasmenu">
                         <a href="javascript:void(0);" class="nxl-link">
                             <span class="nxl-micon"><i class="feather-database"></i></span>
@@ -442,7 +451,7 @@
                                         </div>
                                         <!-- Consume api that get sub section by section and poluate section -->
                                         <div class="col-lg-6 mb-4">
-                                            <label class="form-label">Sub Section Type<span class="text-danger">*</span></label>
+                                            <label class="form-label">Classification<span class="text-danger">*</span></label>
                                             <select class="form-select" data-select2-selector="user">
                                                 <option value="#" data-user="1">Mathematics</option>
                                                 <option value="#" data-user="2">Science</option>
